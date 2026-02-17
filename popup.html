@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YtZen</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="ytzen-popup">
+    <div class="ytzen-header">
+      <img src="icons/icon48.png" alt="YtZen" class="ytzen-logo">
+      <div class="ytzen-title">YtZen</div>
+    </div>
+    <p class="ytzen-desc">Distraction-free YouTube.<br>Focus on what matters.</p>
+    <div class="ytzen-toggle-row">
+      <span class="ytzen-toggle-label" id="statusLabel">Research Mode</span>
+      <label class="ytzen-switch">
+        <input type="checkbox" id="toggleSwitch">
+        <span class="ytzen-slider"></span>
+      </label>
+    </div>
+    <div class="ytzen-status" id="statusText">OFF</div>
+    <div class="ytzen-footer">
+      Hides recommendations, comments &amp; feed
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

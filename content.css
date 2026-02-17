@@ -1,0 +1,84 @@
+/* ── YtZen: Distraction-Free YouTube ─────────────────────── */
+
+/* Master hide class — applied dynamically via JS */
+.ytzen-hidden {
+  display: none !important;
+}
+
+/* ── Floating Toggle Button ──────────────────────────────── */
+#ytzen-toggle {
+  position: fixed;
+  top: 12px;
+  right: 12px;
+  z-index: 2147483647;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 24px;
+  font-family: 'YouTube Sans', 'Roboto', Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  cursor: pointer;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.18);
+  user-select: none;
+  -webkit-user-select: none;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+#ytzen-toggle:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+}
+
+#ytzen-toggle:active {
+  transform: translateY(0);
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* ON state */
+#ytzen-toggle.ytzen-on {
+  background: rgba(6, 95, 70, 0.92);
+  color: #d1fae5;
+}
+
+#ytzen-toggle.ytzen-on:hover {
+  background: rgba(4, 120, 87, 0.95);
+}
+
+/* OFF state */
+#ytzen-toggle.ytzen-off {
+  background: rgba(30, 30, 30, 0.85);
+  color: #e5e5e5;
+}
+
+#ytzen-toggle.ytzen-off:hover {
+  background: rgba(50, 50, 50, 0.9);
+}
+
+/* Indicator dot */
+#ytzen-toggle .ytzen-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  transition: background 0.25s ease;
+}
+
+#ytzen-toggle.ytzen-on .ytzen-dot {
+  background: #34d399;
+  box-shadow: 0 0 6px rgba(52, 211, 153, 0.6);
+}
+
+#ytzen-toggle.ytzen-off .ytzen-dot {
+  background: #737373;
+}
+
+/* ── Smooth transition for hidden elements ───────────────── */
+.ytzen-transition {
+  transition: opacity 0.2s ease, max-height 0.2s ease;
+}
