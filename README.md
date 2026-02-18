@@ -27,7 +27,7 @@ Only the **search bar** and the **video you're watching** remain visible.
 
 ### Chrome Web Store
 
-[**Install YtZen →**](https://chromewebstore.google.com/detail/ytzen)
+[**Install YtZen →**](https://chromewebstore.google.com/detail/bnojgbeenfnchpcniohbbhflokkldiod?utm_source=item-share-cb)
 
 ### Manual / Developer
 
